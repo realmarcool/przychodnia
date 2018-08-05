@@ -6,7 +6,7 @@ public class DaneAdresowe {
     private String adres;
     private String imie;
     private String nazwisko;
-    private int pesel;
+    private long pesel;
     private Scanner scanner = new Scanner(System.in);
 
     public DaneAdresowe() {
@@ -17,7 +17,7 @@ public class DaneAdresowe {
         System.out.println("Podaj adres: ");
         adres = scanner.nextLine();
         System.out.println("Podaj PESEL: ");
-        pesel = scanner.nextInt();
+        pesel = scanner.nextLong();
     }
 
 

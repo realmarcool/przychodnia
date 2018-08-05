@@ -14,8 +14,6 @@ public class Main {
 
     public static void main(String[] args) {
         Queue<Wizyty> wizyty = new LinkedList<>();
-
-        Scanner pobierzString = new Scanner(System.in);
         Scanner pobierzInt = new Scanner(System.in);
         int menu = 0;
         List<Pacjent> listaPacjentow = new ArrayList<>();
@@ -27,12 +25,10 @@ public class Main {
             case 1:
                 listaPacjentow.add(new Pacjent(new DaneAdresowe()));
                 System.out.println("Dodano pacjenta");
-                System.out.println(listaPacjentow);
                 break;
             case 2:
                 listaLekarzy.add(new Lekarz(new DaneAdresowe()));
                 System.out.println("Dodano lekarza");
-                System.out.println(listaLekarzy);
                 break;
             case 3:
                 System.out.println(listaPacjentow.get(0));
